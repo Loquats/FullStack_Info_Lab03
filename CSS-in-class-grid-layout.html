@@ -4,19 +4,32 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Felines in a Grid</title>
-		<link rel="stylesheet" type="text/css" href="grid-style.css">
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+<!-- Default CSS: -->
+        <link rel="stylesheet" type="text/css" href="grid-style.css">   
+<!-- Only loads this if viewport is smaller than 850px -->
+        <link rel="stylesheet" media="(min-width: 850px)" href="big.css">
+<!-- Only loads this if viewport is smaller than 450px -->
+        <link rel="stylesheet" media="(max-width: 450px)" href="small.css">
 	</head>
 
 	<body>
-		<header>
+		<header class="dropdown">
 			<h2 id="site-title">Netflix</h2>
-			<nav>
+                <nav>
 					<a href="#">Home</a>
 					<a href="#critically-acclaimed-container">Critically Acclaimed</a>
 					<a href="#trending-now-container">Trending Now</a>
-					<a href="#action-and-adventure-container">Action and Advnture</a>
+					<a href="#action-and-adventure-container">Action and Adventure</a>
 					<a href="#comedies-container">Comedies</a>
-			</nav>
+			    </nav>
+            <div class="dropdown-content">
+					<a href="#">Home</a>
+					<a href="#critically-acclaimed-container">Critically Acclaimed</a>
+					<a href="#trending-now-container">Trending Now</a>
+					<a href="#action-and-adventure-container">Action and Adventure</a>
+					<a href="#comedies-container">Comedies</a>
+            </div>
 		</header>
 
 		<!-- <section>
